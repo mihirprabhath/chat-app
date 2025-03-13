@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import { connectDB } from "./lib/db.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-
+import { v2 as cloudinary } from "cloudinary";
 import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 
@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 const PORT = process.env.PORT;
-
+ 
 app.use(express.json());
 app.use(cookieParser()); // middleware to parse cookies from request headers
 app.use(
