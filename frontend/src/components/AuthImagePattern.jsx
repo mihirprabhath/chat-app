@@ -1,22 +1,30 @@
-const AuthImagePattern = ({ title, subtitle }) => {
-    return (
-      <div className="hidden lg:flex items-center justify-center bg-base-20 p-12">
-        <div className="max-w-md text-center">
-          <div className="grid grid-cols-3 gap-3 mb-8">
-            {[...Array(9)].map((_, i) => (
-              <div
-                key={i}
-                className={`aspect-square rounded-2xl bg-primary/10 ${
-                  i % 2 === 0 ? "animate-pulse" : ""
-                }`}
-              />
-            ))}
+
+import { MessageSquare, MessageSquareQuote } from "lucide-react";
+
+const AuthImagePattern = () => {
+  return (
+    <div className="w-full flex flex-1 flex-col items-center justify-center p-16 bg-base-100/50">
+      <div className="max-w-md text-center space-y-6">
+        {/* Icon Display */}
+        <div className="flex justify-center gap-4 mb-4">
+          <div className="relative">
+            <div
+              className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center
+             justify-center animate-bounce"
+            >
+              <MessageSquareQuote className="w-8 h-8 text-primary " />
+            </div>
           </div>
-          <h2 className="text-2xl font-bold mb-4">{title}</h2>
-          <p className="text-base-content/60">{subtitle}</p>
         </div>
+
+        {/* Welcome Text */}
+        <h2 className="text-2xl font-bold">Welcome to Chatly!</h2>
+        <p className="text-base-content/60">
+        "Join thousands of users who trust us for seamless experiences."        </p>
+        
       </div>
-    );
-  };
-  
-  export default AuthImagePattern;
+    </div>
+  );
+};
+
+export default AuthImagePattern;
