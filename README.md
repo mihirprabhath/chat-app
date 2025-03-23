@@ -1,6 +1,6 @@
 # Chatly - Real-Time Chat Application
 
-![Chatly Screenshot](https://via.placeholder.com/800x400) <!-- Replace with an actual screenshot of your app -->
+![Chatly Screenshot](./public/images/Screenshot%20(239).png) <!-- Replace with your screenshot path or URL -->
 
 Chatly is a real-time chat application built with the **MERN stack** (MongoDB, Express.js, React, Node.js) and enhanced with **Socket.io** for real-time communication. It features user authentication, online status tracking, and a sleek, responsive UI powered by **TailwindCSS** and **DaisyUI**.
 
@@ -48,9 +48,4 @@ Chatly is a real-time chat application built with the **MERN stack** (MongoDB, E
 - npm (v9 or higher)
 - MongoDB (or MongoDB Atlas for cloud-based database)
 
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/chatly.git
-   cd chatly
+ 
